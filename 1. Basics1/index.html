@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root">Not Rendered</div>
+
+    <!-- The placement of the <script> tag in an HTML document can vary depending on the specific needs of your webpage. Here are some general guidelines:
+
+    Inside the head tag: You can place the <script> tag in the <head> section of your HTML document. This is typically where you would put scripts that need to load before the webpage’s content, such as libraries like jQuery.
+    Inside the body tag: If your script needs to interact with the DOM elements on your page, it’s often a good idea to place your <script> tag just before the closing body tag. This ensures that all the HTML elements have loaded before your script runs.
+    After the body tag: Placing the script tag after the body tag is generally not recommended. While it may work in some browsers due to error recovery, it won’t validate and could lead to unexpected results -->
+
+    <!-- What is a CDN?: A CDN is a geographically distributed group of servers that work together to provide fast delivery of Internet content. It allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos -->
+    <!-- CDN (Content Delivery Network) links -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!-- Crossorigin:
+    The crossorigin attribute in the script tag enables Cross-Origin Resource Sharing (CORS) for loading external JavaScript files from a different origin than the hosting web page. This allows the script to access resources from the server hosting the script, such as making HTTP requests or accessing data. -->
+    <script src="App.js"></script>
+  </body>
+</html>
